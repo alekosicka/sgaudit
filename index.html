@@ -8,26 +8,28 @@
             margin: 0;
             padding: 0;
             background-color: #fff;
-            /* Fonty i kolory dokładnie z Twojego portfolio */
-            font-family: 'Sneak', sans-serif; 
+            font-family: 'Sneak', -apple-system, sans-serif;
             color: #1e1e1e;
-            -webkit-font-smoothing: antialiased;
+            line-height: 1.6;
         }
 
         .container {
-            max-width: 800px;
+            max-width: 880px;
             margin: 0 auto;
             padding: 20px 0;
         }
 
-        .section {
+        .item {
             margin-bottom: 60px;
         }
 
-        .image-container {
+        .img-box {
             width: 100%;
-            border: 1px solid rgba(0, 0, 0, 0.1);
-            margin-bottom: 16px;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 2px;
+            overflow: hidden;
+            background-color: #fcfcfc;
+            margin-bottom: 12px;
         }
 
         img {
@@ -37,41 +39,44 @@
         }
 
         .caption {
-            font-size: 15px;
-            line-height: 1.6;
-            color: rgba(0, 0, 0, 0.55); /* Ten sam szary co u Ciebie */
-            padding-left: 2px;
+            font-size: 14px;
+            color: rgba(0,0,0,0.45); /* Subtelny szary, jak w Twoim portfolio */
+            text-transform: none; /* Normalna wielkość liter */
         }
 
-        /* Usuwamy scrollbar dla estetyki, jeśli to będzie w iframe */
-        ::-webkit-scrollbar {
-            width: 0px;
-        }
+        ::-webkit-scrollbar { width: 0; }
     </style>
 </head>
 <body>
 
     <div class="container">
-        
-        <div class="section">
-            <div class="image-container">
-                <img src="audit-1.jpg" alt="Opis 1">
+
+        <div class="item">
+            <div class="img-box">
+                <img src="analiza.jpg" alt="Audit excerpt">
             </div>
-            <p class="caption">Existing messaging audit identifying overlapping narratives between legal and scientific contexts.</p>
+            <p class="caption">Audit excerpt</p>
         </div>
 
-        <div class="section">
-            <div class="image-container">
-                <img src="audit-2.jpg" alt="Opis 2">
+        <div class="item">
+            <div class="img-box">
+                <img src="strategia.jpg" alt="Audit excerpt">
             </div>
-            <p class="caption">Stakeholder alignment workshops to define shared mission and entity separation.</p>
+            <p class="caption">Audit excerpt</p>
         </div>
 
-        <div class="section">
-            <div class="image-container">
-                <img src="audit-3.jpg" alt="Opis 3">
+        <div class="item">
+            <div class="img-box">
+                <img src="iteracje.jpg" alt="Justpoint.com iterations">
             </div>
-            <p class="caption">Mapping content flows to reduce friction in customer intake and support future AI workflows.</p>
+            <p class="caption">Justpoint.com iterations</p>
+        </div>
+
+        <div class="item">
+            <div class="img-box">
+                <img src="warsztaty.jpg" alt="Workshop Miro board">
+            </div>
+            <p class="caption">Workshop Miro board</p>
         </div>
 
     </div>
