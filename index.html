@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            /* Fonty i kolory dokładnie z Twojego portfolio */
+            font-family: 'Sneak', sans-serif; 
+            color: #1e1e1e;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px 0;
+        }
+
+        .section {
+            margin-bottom: 60px;
+        }
+
+        .image-container {
+            width: 100%;
+            border: 1px solid rgba(0, 0, 0, 0.1);
+            margin-bottom: 16px;
+        }
+
+        img {
+            width: 100%;
+            display: block;
+            height: auto;
+        }
+
+        .caption {
+            font-size: 15px;
+            line-height: 1.6;
+            color: rgba(0, 0, 0, 0.55); /* Ten sam szary co u Ciebie */
+            padding-left: 2px;
+        }
+
+        /* Usuwamy scrollbar dla estetyki, jeśli to będzie w iframe */
+        ::-webkit-scrollbar {
+            width: 0px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <div class="section">
+            <div class="image-container">
+                <img src="audit-1.jpg" alt="Opis 1">
+            </div>
+            <p class="caption">Existing messaging audit identifying overlapping narratives between legal and scientific contexts.</p>
+        </div>
+
+        <div class="section">
+            <div class="image-container">
+                <img src="audit-2.jpg" alt="Opis 2">
+            </div>
+            <p class="caption">Stakeholder alignment workshops to define shared mission and entity separation.</p>
+        </div>
+
+        <div class="section">
+            <div class="image-container">
+                <img src="audit-3.jpg" alt="Opis 3">
+            </div>
+            <p class="caption">Mapping content flows to reduce friction in customer intake and support future AI workflows.</p>
+        </div>
+
+    </div>
+
+</body>
+</html>
